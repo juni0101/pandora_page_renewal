@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="KO">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/images/common/favicon.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/header_transform.css">
+    <link rel="stylesheet" href="./css/main_desktop.css">
+    <title>PANDORA_판도라</title>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <header class="ta_header">
+        <div class="ta_logo" OnClick="location.href ='#';">
+          <img src="./assets/images/common/logo_pandora.svg" alt="ta_logo">
+        </div>
+      </header>
+      <header class="dt_header">
+        <div class="top_notice">
+          <p>
+            고객센터 전화응대 서비스 종료-문의하기 게시판을 통해 접수해
+            주시면빠른상담 가능합니다.
+          </p>
+        </div>
+        <!-- //.top_notice -->
+        <div class="header_inner" id="header_inner">
+          <div
+            class="logo"
+            OnClick="location.href ='#';"
+            style="cursor: pointer"
+          ></div>
+          <nav>
+            <!-- gnb=global navigation bar -->
+            <ul class="gnb">
+              <li>
+                <a href="html/about.html">Pandora</a>
+              </li>
+              <li>
+                <a href="html/notice.html">notice</a>
+              </li>
+              <li>
+                <a href="html/list_ring.html">Jewelry</a>
+                <ul class="sub_list sub_list Jewelry">
+                  <li><a href="html/list_ring.html">Ring</a></li>
+                  <li><a href="html/list_earring.html">Earrings</a></li>
+                  <li><a href="html/list_necklaces.html">Necklaces</a></li>
+                  <li><a href="html/list_Bracelets.html">Bracelets</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="util">
+            <div class="search">
+              <button type="submit" class="search_btn" id="searchHeaderBtn">
+                Search button
+              </button>
+              <input class="ser_input" type="text" placeholder="SEARCH">
+            </div>
+            <!-- //.search -->
+            <ul class="gnb_icon">
+              <li>
+                <a href="#">store</a>
+              </li>
+              <li>
+                <a href="#">mypage</a>
+                <div class="mypage_login">
+                  <p>My PANDORA</p>
+                  <p>PANDORA 온라인 회원만의 <br>특별한 혜택을 만나보세요.</p>
+
+                  <button onclick="location.href='./html/login.html'">로그인</button>
+                  <button onclick="location.href='./html/join.html'">회원가입</button>
+                </div>
+              </li>
+              <li>
+                <a href="#">cart</a>
+              </li>
+            </ul>
+          </div>
+          <!-- //.util -->
+        </div>
+        <!-- //.header_inner -->
+      </header>
+      <!-- //header -->
+
+      <div id="contents">
+        <!-- section1 -->
+<!--         
+        <div class="popup">
+          <div class="popup_box">
+            <p>팝업창</p>
+          </div>
+          <div class="popup_close">
+            <p><label for="closeBtn">창 닫기</label></p>
+            <button class="popup_X" id="closeBtn">X</button>
+          </div>
+        </div>
+-->
+        <section class="sec1">
+          <div class="ph_sec1">
+            <img src="./assets/images/main/ph_sec1.jpg" alt="ph_sec1">
+          </div>
+          <div class="sec1_slider main">
+            <div>
+              <img src="./assets/images/main/sec1_img.jpg" alt="main_img">
+              <!-- <h2>SEEK THE SUN</h2> -->
+            </div>
+            <div>
+              <img src="./assets/images/main/slide_img.png" alt="main_img">
+            </div>
+            <div>
+              <img src="./assets/images/main/slide_img2.png" alt="main_img">
+            </div>
+          </div>
+          <h2>SEEK THE SUN</h2>
+          <button onclick="location.href = '#'">바로가기</button>
+        </section>
+        <!-- //section1 -->
+
+        <!-- section2 -->
+        <section class="sec2">
+          <div class="sec2_top">
+            <div class="inner">
+              <p>New pieces to love</p>
+              <h2 class="tit">
+                Discover a world of charms, bracelets and much more.
+              </h2>
+              <button onclick="location.href = '#'">바로가기</button>
+            </div>
+            <div class="inner_banner">
+              <img
+                src="./assets/images/main/category_banner.jpg"
+                alt="category_banner"
+              >
+            </div>
+          </div>
+          <ul class="category">
+            <li>
+              <a href="#"
+                ><img
+                  src="./assets/images/main/category_3.png"
+                  alt="category3"
+                >
+                <p>EARRINGS</p></a
+              >
+            </li>
+            <li class="category_sub">
+              <div class="category_name">
+                <a href="#"> <span>귀걸이</span></a>
+              </div>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./assets/images/main/category_4.png"
+                  alt="category4"
+                >
+                <p>NECKLACES</p></a
+              >
+            </li>
+            <li class="category_sub">
+              <div class="category_name">
+                <a href="#"> <span>목걸이</span></a>
+              </div>
+            </li>
+            <li class="category_sub">
+              <div class="category_name">
+                <a href="#"> <span>반지</span></a>
+              </div>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./assets/images/main/category_5.png"
+                  alt="category5"
+                >
+                <p>RINGS</p></a
+              >
+            </li>
+            <li class="category_sub">
+              <div class="category_name">
+                <a href="#"> <span>팔찌</span></a>
+              </div>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./assets/images/main/category_6.png"
+                  alt="category6"
+                >
+                <p>BRACELETS</p></a
+              >
+            </li>
+          </ul>
+        </section>
+        <!-- //section2 -->
+
+        <!-- section3 -->
+        <section class="sec3">
+          <div class="ph_bg_box">
+            <img src="./assets/images/main/ph_section3.png" alt="box_img">
+            <h2>HIGH SUMMER 2023</h2>
+          </div>
+          <div class="bg_box">
+            <img src="./assets/images/main/section3.png" alt="box_img">
+            <h2>HIGH SUMMER 2023</h2>
+          </div>
+          <div class="slide">
+            <ul class="item_list">
+              <li>
+                <img src="./assets/images/main/item1.png" alt="item1">
+                <p>투톤 셀레셜 트리플 댕글 참</p>
+                <p>￦138,000</p>
+                <button onclick="location.href = '#'">제품보기</button>
+              </li>
+              <li>
+                <img src="./assets/images/main/item2.png" alt="item2">
+                <p>오팔러센트 오션 딥 블루 참</p>
+                <p>￦75,000</p>
+                <button onclick="location.href = '#'">제품보기</button>
+              </li>
+              <li>
+                <img src="./assets/images/main/item3.png" alt="item3">
+                <p>블루 뮤라노 글래스 버터플라이 댕글 참</p>
+                <p>￦118,000</p>
+                <button onclick="location.href = '#'">제품보기</button>
+              </li>
+              <li>
+                <img src="./assets/images/main/item4.png" alt="item4">
+                <p>셀레셜 썬, 스타&문 클립 참</p>
+                <p>￦78,000</p>
+                <button onclick="location.href = '#'">제품보기</button>
+              </li>
+              <li>
+                <img src="./assets/images/main/item5.png" alt="item5">
+                <p>카메라, 하트 & 컴퍼스 트리플 댕글 참</p>
+                <p>￦118,000</p>
+                <button onclick="location.href = '#'">제품보기</button>
+              </li>
+              <li>
+                <img src="./assets/images/main/item6.png" alt="item6">
+                <p>오프너볼 패스포트 댕글 참</p>
+                <p>￦78,000</p>
+                <button onclick="location.href = '#'">제품보기</button>
+              </li>
+              <li>
+                <img src="./assets/images/main/item7.png" alt="item7">
+                <p>디즈니 더 리틀 머메이드 시셸 참</p>
+                <p>￦138,000</p>
+                <button onclick="location.href = '#'">제품보기</button>
+              </li>
+              <li>
+                <img src="./assets/images/main/item8.png" alt="item8">
+                <p>디즈니 더 리틀 머메이드 세바스찬 게 댕글 참</p>
+                <p>￦138,000</p>
+                <button onclick="location.href = '#'">제품보기</button>
+              </li>
+              <li>
+                <img src="./assets/images/main/item9.png" alt="item9">
+                <p>디즈니 더 리틀 머메이드 에리얼 댕글 참</p>
+                <p>￦158,000</p>
+                <button onclick="location.href = '#'">제품보기</button>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- sec4 -->
+        <div class="ta_sec4">
+          <div class="ta_main_banner">
+            <a href="#">
+              <img src="./assets/images/main/ta_banner.png" alt="ta_banner">
+            </a>
+          </div>
+        </div>
+        <section class="sec4">
+          <h2>Event</h2>
+          <div class="sec4_banner">
+            <div class="sec4_mainBanner">
+              <a href="#"
+                ><img
+                  src="./assets/images/main/event_banner.jpg"
+                  alt="event_banner"
+                >
+                <p>Pandora Me Collection</p>
+                <p>For every side of you.</p>
+              </a>
+            </div>
+            <div class="sec4_mainBanner hide">
+              <a href="#"
+                ><img
+                  src="./assets/images/main/event_bg2.jpg"
+                  alt="event_banner"
+                >
+                <!-- <p>Pandora Me Collection</p> -->
+                <!-- <p>For every side of you.</p> -->
+              </a>
+            </div>
+            <div class="sec4_mainBanner hide">
+              <a href="#"
+                ><img
+                  src="./assets/images/main/event_banner5.jpg"
+                  alt="event_banner"
+                >
+                <p>Disney x Pandora</p>
+                <p>Enjoy your most loved characters</p>
+              </a>
+            </div>
+            <ul class="side_banner">
+              <li class="side_item">
+                <img
+                  src="./assets/images/main/event_banner1.png"
+                  alt="event_banner"
+                >
+                <p>Pandora Gift Sets</p>
+              </li>
+              <li class="side_item">
+                <img
+                  src="./assets/images/main/event_banner2.jpg"
+                  alt="event_banner"
+                >
+                <p>MARBLE x Pandora</p>
+              </li>
+              <li class="side_item">
+                <img
+                  src="./assets/images/main/event_banner4.jpg"
+                  alt="event_banner"
+                >
+                <p>Disney x Pandora</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- //section3 -->
+      </div>
+      <!-- //#contents -->
+
+      <footer>
+        <div class="footer_inner">
+          <!-- fnb=footer navigation bar -->
+          <ul class="fnb">
+            <li>
+              Customer Service
+              <ul>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">자주하는 질문</a></li>
+                <li><a href="#">매장찾기</a></li>
+                <li><a href="#">상품 관리법</a></li>
+                <li><a href="#">품질보증</a></li>
+                <li><a href="#">사이즈 가이드</a></li>
+                <li><a href="#">문의하기</a></li>
+              </ul>
+            </li>
+            <li>
+              Account
+              <ul>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">위시리스트</a></li>
+                <li><a href="#">배송조회</a></li>
+              </ul>
+            </li>
+            <li>
+              About Pandora
+              <ul>
+                <li><a href="#">브랜드 알아보기</a></li>
+                <li><a href="#">연혁</a></li>
+              </ul>
+            </li>
+            <li>
+              Legal
+              <ul>
+                <li><a href="#">회원정책</a></li>
+                <li><a href="#">배송 및 교환 정책</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="f_info1">
+            <ul class="f_about">
+              <li>
+                <p>
+                  ㈜스타럭스 대표이사 : 안종훈 ㅣ 사업자등록번호 : 120-86-24028
+                  ㅣ 통신판매업등록번호 : 서울 강남 – 4364호
+                </p>
+              </li>
+              <li>
+                <p>
+                  매장 : 서울특별시 강남구 테헤란로87길 22 한국도심공항 지하 1층
+                  R108호 판도라매장
+                </p>
+              </li>
+              <li>
+                <p>
+                  E-Mail : 판도라 공식 온라인몰 (pandoracs@starluxe.co.kr) ㅣ
+                </p>
+              </li>
+            </ul>
+            <ul class="sns">
+              <li>
+                <a href="https://pf.kakao.com/_VXgvj" target="_blank"
+                  >sns kakaotalk</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/PandoraSouthKorea"
+                  target="_blank"
+                  >sns facebook</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UCnc-_ehFHkg2OOn8wqGS4iw"
+                  target="_blank"
+                  >sns youtube</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/theofficialpandora/"
+                  target="_blank"
+                  >sns instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.pinterest.co.kr/officialpandora/"
+                  target="_blank"
+                  >sns pinterest</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- //.f_info1 -->
+          <div class="f_info2">
+            <p class="copyright">
+              COPYRIGHT 2023 PANDORA. ALL RIGHTS RESERVED.
+            </p>
+            <div class="inipay"></div>
+          </div>
+          <!-- //.f_info2 -->
+        </div>
+        <!-- //.footer_inner -->
+      </footer>
+      <!-- footer -->
+    </div>
+    <!-- //#wrap -->
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bxslider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="./js/main_tab.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

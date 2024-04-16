@@ -1,0 +1,212 @@
+@charset "utf-8";
+@import url(login_notice_typo.css);
+@import url(common.css);
+
+
+/* main-index */
+
+
+/* notice-공지사항 */
+html {
+    scroll-behavior: smooth;
+}
+
+#notice {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 196px;
+    margin-bottom: 220px;
+    margin-left: 220px;
+    margin-right: 220px;
+    position: relative;
+}
+
+.nmenu .m {
+    display: block;
+    background-color: #27251F;
+    padding-left: 20px;
+}
+.nmenu li {
+    border-top: 1px solid #ededed;
+    margin-bottom: 0;
+    width: 220px;
+    height: 30px;
+}
+.nmenu a {
+    display: block;
+    padding-left: 20px;
+}
+.nmenu a:hover {
+    text-decoration: underline;
+}
+
+/* 테이블 */
+.ntable {
+    width: 920px;
+    height: 450px;
+}
+
+.ntable>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ntable h2 {
+    padding-bottom: 1.5rem;
+}
+
+/* 검색창 */
+.nsearch {
+    height: 20px;
+    /* width: 1400px;
+    margin-bottom: 100px; */
+    /* margin-left: 300px; */
+    display: flex;
+    /* justify-content: flex-end; */
+}
+
+.nsearch select {
+    border: none;
+    background: none;
+    height: 25px;
+    border-bottom: 2px solid black;
+}
+
+.nsearch input {
+    width: 200px;
+    height: 25px;
+    border: none;
+    background: none;
+    vertical-align: top;
+}
+
+.searchb {
+    height: 25px;
+    border-bottom: 2px solid black;
+    margin: 0 0 0 5px;
+}
+
+.searchb img {
+    width: 20px;
+    height: 20px;
+}
+
+.searchb button {
+    border: none;
+    background: none;
+    height: 25px;
+    cursor: pointer;
+}
+
+.ntable table {
+    border-collapse: collapse;
+    border-left: 0;
+    border-right: 0;
+}
+td {
+    border-bottom: 1px solid #c4c4c4;
+}
+.ntable th {
+    padding: 17px 0;
+    display: table-cell;
+    border-bottom: 1px solid #333333;
+    border-top: 1px solid #333333;
+}
+
+.ntable td {
+    height: 21px;
+    padding: 20px 0;
+}
+
+
+.ntable span {
+    display: inline-block;
+}
+
+.t_num {
+    width: 140px;
+    text-align: center;
+}
+
+.t_tit {
+    width: 580px;
+}
+
+.t_date {
+    width: 200px;
+    text-align: center;
+}
+
+#notice .listn {
+    justify-content: center;
+    /* margin-top: 16px; */
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+
+.listn span {
+    margin: 0 8px;
+    opacity: .5;
+    width: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* slide */
+.n_slide {
+    display: block;
+    margin: auto 0;
+    width: 243px;
+    overflow: hidden;
+}
+
+.n_slide ul {
+    position: relative;
+    display: flex;
+    width: 400%;
+    animation: slide 9s infinite;
+}
+
+.n_slide li {
+    width: 25%;
+    flex: 0 0 auto;
+}
+
+@keyframes slide {
+    0% {
+        left: 0;
+    }
+
+    5% {
+        left: -100%;
+    }
+
+    33.33% {
+        left: -100%;
+    }
+
+    38% {
+        left: -200%;
+    }
+
+    66.66% {
+        left: -200%;
+    }
+
+    71% {
+        left: -300%;
+    }
+
+    99.99% {
+        left: -300%;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+.hide {
+    display: none;
+}

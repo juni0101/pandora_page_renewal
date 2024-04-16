@@ -1,0 +1,183 @@
+@charset "utf-8";
+@import url(login_notice_typo.css);
+@import url(common.css);
+
+/* main-index */
+
+
+/* login-로그인 */
+html {
+    scroll-behavior: smooth;
+}
+#login {
+    width: 960px;
+    height: 1000px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: none;
+}
+
+#login h2 {
+    margin-top: 150px;
+    margin-bottom: 30px;
+    padding-right: 900px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, .5);
+}
+
+/* 슬라이드 */
+.simg {
+    border-radius:3%;
+    width: 960px;
+    height: 370px;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.simg img {
+    border-radius:3%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/* 로그인 컨텐츠 */
+.l_content {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.l_content>div {
+    margin: 0 40px;
+}
+
+.l_content legend {
+    margin-bottom: 20px;
+}
+
+.l_content button {
+    cursor: pointer;
+}
+
+/* 회원전용 */
+.l_member {
+    width: 410px;
+    height: 380px;
+}
+
+.l_member input {
+    width: 410px;
+    height: 50px;
+    margin: 5px 0;
+    padding: 0 20px;
+    border-radius: 25px;
+    border: 1px solid rgb(136, 136, 136);
+}
+
+
+.line {
+    display: inline-block;
+    width: 1px;
+    border: 1px solid #777;
+    opacity: .2;
+}
+
+.l_chk_b {
+    display: flex;
+    margin: 10px 0;
+}
+
+.l_chk_b input {
+    margin-top: 0;
+    margin-right: 3px;
+    width: 17px;
+    height: 17px;
+}
+
+.l_chk_b label:nth-of-type(1) {
+    margin-right: 15px;
+}
+
+.l_button {
+    width: 410px;
+    height: 50px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+.l_help {
+    display: flex;
+    justify-content: center;
+    width: 410px;
+    height: 19px;
+    margin: 5px 0;
+}
+
+.l_help :nth-child(1) ::after {
+    content: "|";
+    margin: 0 20px;
+}
+
+.l_help :nth-of-type(2) ::after {
+    content: "|";
+    margin: 0 20px;
+
+}
+
+.l_sns {
+    display: flex;
+    justify-content: space-between;
+    width: 410px;
+    height: 45px;
+    margin: 30px 0 0 0;
+}
+
+.sns_login {
+    display: flex;
+}
+
+.sns_login img {
+    width: 25px;
+    height: 25px;
+    margin: 5px 15px;
+}
+
+/* 비회원 전용 */
+.non_member {
+    width: 410px;
+    height: 371px;
+}
+
+.non_member input {
+    width: 410px;
+    height: 50px;
+    margin: 5px 0;
+    padding: 0 20px;
+    border-radius: 25px;
+    border: 1px solid rgb(136, 136, 136);
+}
+
+.non_member button {
+    width: 410px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #000;
+
+}
+
+.l_order_button {
+    margin: 10px 0;
+}

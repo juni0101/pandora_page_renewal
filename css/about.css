@@ -1,0 +1,276 @@
+@charset "utf-8";
+@import url(typo.css);
+@import url(common.css);
+
+/* about typo*/
+
+#about_wrap h2 {
+    text-align: center;
+}
+
+.about_sec1 h2 {
+    color: #fff;
+    font-size: 4rem;
+}
+
+.about_sec23 h2 {
+    font-size: 3.2rem;
+}
+
+.about_sec23 p {
+    line-height: 160%;
+}
+
+.about_sec2 h3 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.about_sec3>p {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.about_sec3 h3 {
+    font-size: 4rem;
+}
+
+.about_sec3 div {
+    color: #fff;
+}
+
+/* about-브랜드 소개 */
+.about_sec1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    background: url(../assets/images/about/p_slogan1.jpg) no-repeat center/contain fixed;
+    background-position: 0 105px;
+}
+
+.about_sec1 h2 {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    line-height: 64px;
+    /* opacity: 0; */
+    animation: txtMove 2s ease-in-out;
+}
+
+@keyframes txtMove {
+    0% {
+        transform: translate(-50%, 20%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(-50%, -40%);
+    }
+}
+
+.about_sec23 h2 {
+    line-height: 200px;
+}
+
+.about_sec2 {
+    width: 100%;
+    height: 1400px;
+}
+
+.about_sec2 ul {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.about_sec2_his {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+}
+
+.about_sec2_his::before {
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    content: '';
+    width: 2px;
+    height: 400px;
+    background: #d9d9d9;
+}
+
+.as2_img {
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+}
+
+
+
+.as2_img::after {
+    z-index: 3;
+    position: absolute;
+    left: 50%;
+    content: '';
+    width: 30px;
+    height: 30px;
+    transform: translate(-15px, 135PX);
+    background-color: #fff;
+    border: 6px solid #F2A1B2;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+/* hover animation */
+.about_sec2_his:hover .as2_img img {
+    animation: imgmotion 1.2s ease-in-out 0.6s;
+}
+
+@keyframes imgmotion {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.02);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.about_sec2_his:hover .as2_ani1::before {
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    transform: translate(-15px, 150px);
+    content: '';
+    width: 115px;
+    height: 2px;
+    background: #d9d9d9;
+    animation: linemove1 0.8s ease;
+}
+
+@keyframes linemove1 {
+    0% {
+        width: 0px;
+        height: 2px;
+    }
+
+    100% {
+        width: 115px;
+        height: 2px;
+    }
+}
+
+.about_sec2_his:hover .as2_ani2::before {
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    transform: translate(-100px, 150px);
+    content: '';
+    width: 115px;
+    height: 2px;
+    background: #d9d9d9;
+    animation: linemove2 0.8s ease;
+}
+
+@keyframes linemove2 {
+    0% {
+        width: 0px;
+        height: 2px;
+        transform: translate(0px, 150px);
+    }
+
+    100% {
+        width: 115px;
+        height: 2px;
+    }
+}
+
+.about_sec2_his h3 {
+    padding-bottom: 20px;
+}
+
+.as2_txt {
+    width: 600px;
+}
+
+.about_sec3 {
+    max-width: 1400px;
+    height: 1100px;
+    margin: 0 auto;
+}
+
+.about_sec3>p {
+    line-height: 160%;
+    height: 100px;
+}
+
+.as3_slide_wrap {
+    width: 1400px;
+    height: 700px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+
+.as3_img img {
+    width: 100%;
+    height: 700px;
+}
+
+.as3_txt {
+    position: absolute;
+    bottom: 20%;
+    padding: 0 100px;
+}
+
+/* 슬라이드 */
+.bx-wrapper {
+    box-shadow: none;
+    border: none;
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: 10%;
+    right: 7%;
+    width: auto;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #fff;
+}
+
+.bx-wrapper .bx-controls-direction a {
+    z-index: 5;
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+
+}
+
+.bx-wrapper .bx-prev {
+    background: url(../assets/images/about/arr_left.svg) no-repeat ;
+}
+
+.bx-wrapper .bx-next {
+    background: url(../assets/images/about/arr_right.svg) no-repeat;
+}
+
+.bx-wrapper .bx-next:hover,
+.bx-wrapper .bx-next:focus {
+    background-position: 0;
+}

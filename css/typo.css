@@ -1,0 +1,74 @@
+@charset "utf-8";
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font: 1.6rem "Pretendard-Regular", sans-serif;
+}
+
+/* header */
+.top_notice {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.gnb li {
+  font-size: 1.6rem;
+}
+
+.search input::placeholder {
+  font-size: 1rem;
+}
+
+/* section */
+.inner p:first-of-type {
+  font-size: 20px;
+  border: 1px dashed pink;
+  width: 494px;
+  height: 30px;
+}
+
+.tit {
+  font-size: 46px;
+  letter-spacing: -1px;
+  margin-top: 22px;
+}
+
+.bg_box p {
+  color: #fff;
+  margin-top: 16px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  z-index: 9;
+  transform: translate(-50%, -50%);
+}
+.item_list li p {
+  letter-spacing: -1px;
+  margin-bottom: 8px;
+}
+
+/* footer */
+.fnb > li {
+  font-size: 1.4rem;
+}
+
+.fnb > li > ul > li {
+  font-size: 1.2rem;
+}
+
+.f_info1 {
+  font-size: 1.2rem;
+}

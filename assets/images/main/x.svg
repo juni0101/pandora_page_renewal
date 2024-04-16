@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ubiquitous/icon/close</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ubiquitous/widget/open" transform="translate(-89.000000, -12.000000)" fill="#27251F">
+            <g id="content" transform="translate(11.000000, 8.000000)">
+                <g id="Group" transform="translate(78.000000, 4.000000)">
+                    <g id="Icons-/-Close-/-X" transform="translate(-6.600000, -6.600000)">
+                        <polygon id="Color" points="7.04 7.744 7.744 7.04 17.6 16.896 27.3386667 7.04 28.16 7.744 18.304 17.6 28.16 27.3386667 27.3386667 28.16 17.6 18.304 7.744 28.16 7.04 27.3386667 16.896 17.6"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

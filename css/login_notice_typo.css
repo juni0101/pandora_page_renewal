@@ -1,0 +1,110 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font: 1.6rem 'Pretendard-Regular', sans-serif;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 160%;
+    font-weight: 400;
+}
+
+
+/* header */
+.top_notice {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.gnb li {
+    font-size: 1.8rem;
+}
+
+.search input::placeholder {
+    font-size: 1.0rem;
+}
+
+/* footer */
+.fnb>li{
+    font-size: 1.4rem;
+}
+
+.fnb>li>ul>li {
+    font-size: 1.2rem;
+}
+
+.f_info1 {
+    font-size: 1.2rem;
+}
+
+
+
+/* notice*/
+.ntable h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+.ntable th {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    font-weight: normal;
+}
+.ntable tr {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+}
+.nmenu {
+    font-size: 1.2rem;
+    line-height: 3rem;
+}
+.nmenu .m {
+    color: #fff;
+}
+
+
+/* login */
+#login legend {
+    font-size: 1.5rem;
+    line-height: 160%;
+    font-weight: 400;
+}
+
+.l_chk_b label {
+    font-size: 1.2rem;
+    line-height: 160%;
+    font-weight: 400;
+    color: #333;
+}
+
+.l_button,
+.l_order_button,
+.l_find_button {
+    font-size: 1.6rem;
+    line-height: 160%;
+    font-weight: 400;
+    color: #fff;
+}
+
+.l_help a {
+    font-size: 1.2rem;
+    line-height: 160%;
+    font-weight: 400;
+    color: #8f8f8f;
+}
+.l_sns div {
+    font-size: 14px;
+    line-height: 160%;
+    font-weight: 400;
+    color: #333;
+}

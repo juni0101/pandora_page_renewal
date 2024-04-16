@@ -1,0 +1,410 @@
+@charset "utf-8";
+
+/* 와이어프레임 */
+/* #sec1 {background-color: rebeccapurple;} */
+/* #sec2 {background-color: lightcyan;} */
+/* #sec3 {background-color: lightcoral;} */
+
+.container_list2 {
+    width: 1600px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+/* -----------섹션1----------- */
+/* 패럴렉스 스크롤링(Parallax Scorolling) */
+.pearallax {
+    background: no-repeat center/cover fixed;
+}
+#sec1 {
+    margin-top: 35px;
+    color: #fff;
+    position: relative;
+    height: 270px;
+    background-image: url(../assets/images/list_ring/main.png);
+    background-position: 0 120%;
+}
+
+.inner_sec1 {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    width: 300px;
+    font-size: 12px;
+    line-height: 20px;
+    /* 애니메이션 이름 */
+    animation-name: jaehee;
+    animation-duration: 2s;
+    animation-duration: leaner;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+.tit_sec1 {
+    font-size: 24px;
+    
+}
+.txt_sec1 {
+    margin: 10px 0 0;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+@keyframes jaehee {
+    0% {
+        left:-200px;
+        opacity: 0;
+    }
+    100% {
+        left: 5%;
+    }
+}
+/* -----------필터----------- */
+/* filter */
+#filter {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.199);
+}
+#filter > ul {
+    z-index: 1;
+    display: flex;
+    height: 62px;
+    padding: 0 77px;
+}
+#filter .dep1 > li > a {
+    font-size: 12px;
+    position: relative;
+    top: 43%;
+    margin-right: 40px;
+    letter-spacing: 1px;
+    height: 20px;
+}
+#filter .dep1 > li > a:hover {
+    border-bottom: 3px solid pink;
+    font-weight: 700;
+}
+.dep2 {
+    position: absolute;
+    width: 160px;
+    top: 40%;
+    left: 10%;
+    padding: 16px;
+    background: white;
+    box-shadow: 1px 5px 10px rgba(128, 128, 128, 0.247);
+    font-size: 12px;
+    display: none;
+}
+.dep2 li {
+    padding: 8px;
+}
+.dep1 > li:hover > .dep2 {
+    display: block;
+}
+.dep2 a:hover {
+    font-weight: 700;
+}
+.right {
+    float: left;
+    margin: 0 20px 0 0;
+    padding: 0 20px 0 0;
+    position: relative;
+    font-family: PanText;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgb(115,114,110);
+    line-height: 62px;
+}
+.right select {
+    width: 100%;
+    height: 25px;
+    margin: 17px 0 0;
+    padding: 0 12px 0 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgb(51,51,51);
+    line-height: 25px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-image: url(../assets/images/list_ring/arr_down.svg);
+    background-size: 8px 4px;
+    border: 0;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    cursor: pointer;
+}
+.right label:after {
+    width: 1px;
+    height: 16px;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    background-color: rgb(185,186,187);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.right label {
+    float: left;
+    margin: 0 20px 0 0;
+    padding: 0 20px 0 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    font-family: PanText;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgb(115,114,110);
+    line-height: 62px;
+}
+#selectSort {
+    font-size: 12px;
+}
+#collections {
+    position: absolute;
+    top: 40%;
+    left: 16%;
+    width: 200px;
+}
+#with {
+    position: absolute;
+    top: 40%;
+    left: 22%;
+    width: 180px;
+}
+#themes {
+    position: absolute;
+    top: 40%;
+    left: 29%;
+}
+#metal {
+    position: absolute;
+    top: 40%;
+    left: 34%;
+}
+#color {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+#size {
+    position: absolute;
+    top: 40%;
+    left: 43%;
+}
+#price {
+    position: absolute;
+    top: 40%;
+    left: 47%;
+    width: 190px;
+}
+.dep2 > li > img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.dep2 > li > input {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+/* -----------섹션2----------- */
+#slideShow {
+    position: relative;
+    width: 1600px;
+    height: 500px;
+    margin: 50px auto;
+    overflow: hidden;
+    /*리스트 형식으로 이미지를 일렬로
+    정렬할 것이기 때문에, 500px 밖으로 튀어 나간 이미지들은
+    hidden으로 숨겨줘야됨*/
+}
+
+.slides {
+    position: relative;
+    width: 1600px;
+    height: 80%;
+    /* 슬라이드할 사진과 마진 총 넓이 */
+    transition: left 0.5s ease-out;
+    /*ease-out: 처음에는 느렸다가 점점 빨라짐*/
+    margin: 10px auto;
+}
+
+/* 첫 번째 슬라이드 가운데에 정렬하기위해
+    첫번째 슬라이드만 margin-left조정 */
+.slides li:first-child {
+    margin-left: 10px;
+}
+
+/* 슬라이드들 옆으로 정렬 */
+.slides li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.controller span {
+    position: absolute;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px 20px;
+    top: 40%;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#slideShow ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sec23 li {
+    width: 325px;
+    height: 325px;
+}
+
+.slides span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    background-color: #111;
+    text-align: center;
+    padding: 8px 16px;
+}
+
+#slideShow li {
+    border: 1px solid;
+    position: relative;
+}
+
+.controller span:hover {
+    background-color: rgba(128, 128, 128, 0.11);
+}
+
+.prev {
+    left: 10px;
+}
+
+/* 이전 화살표에 마우스 커서가 올라가 있을때
+이전 화살표가 살짝 왼쪽으로 이동하는 효과*/
+.prev:hover {
+    transform: translateX(-10px);
+}
+
+.next {
+    right: 100px;
+}
+
+/* 다음 화살표에 마우스 커서가 올라가 있을때
+이전 화살표가 살짝 오른쪽으로 이동하는 효과*/
+.next:hover {
+    transform: translateX(10px);
+}
+
+/* 이전, 다음 화살표에 마우스 커서가 올라가 있을때 */
+.controller span:hover {
+    background-color: rgba(128, 128, 128, 0.11);
+}
+
+.prev {
+    left: 10px;
+}
+
+/* 이전 화살표에 마우스 커서가 올라가 있을때
+    이전 화살표가 살짝 왼쪽으로 이동하는 효과*/
+.prev:hover {
+    transform: translateX(-10px);
+}
+
+.next {
+    right: 10px;
+}
+
+/* 다음 화살표에 마우스 커서가 올라가 있을때
+    이전 화살표가 살짝 오른쪽으로 이동하는 효과*/
+.next:hover {
+    transform: translateX(10px);
+}
+
+.controller img {
+    width: 50px;
+}
+
+.sec_img1~p {
+    margin: 4px auto;
+    text-align: center;
+}
+
+.sec_img1:hover {
+    transform: scale(1.1);
+}
+/* -------------섹션2끝---------- */
+
+/* -------------섹션3---------- */
+
+#sec3 {
+    text-align: center;
+}
+
+.sec_img2:hover {
+    transform: scale(1.1);
+}
+
+#sec3 ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec_img2 {
+    padding: 0 16px;
+}
+
+.list2_2 {
+    background: #F0F0F0;
+    margin: 1px;
+}
+.info-box {
+    height: 36px;
+    padding: 0 20px;
+    overflow: hidden;
+    color: rgb(39,37,31);
+    line-height: 18px;
+}
+.price {
+    margin: 13px 0 0;
+}
+
+/* -----------섹션4----------- */
+#sec4 {
+    margin: 50px auto;
+}
+.sec_im2 {
+    width: 346px;
+    height: 346px;
+}
+.bt {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+.bt>li {
+    background: #F0F0F0;
+    border: 1px solid #000;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}

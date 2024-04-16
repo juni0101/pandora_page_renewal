@@ -1,0 +1,232 @@
+@charset "utf-8";
+@import url(typo.css);
+@import url(common.css);
+
+/* 회원가입 */
+.join_inner { 
+    height: 2000px;
+}
+
+.join_inner h2 {
+    padding-top: 200px;
+    line-height: 100px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.join_inner>p:nth-child(2) {
+    color: #aaaaaa;
+    text-align: center;
+}
+
+.join_inner h3, .join_inner h4 {
+    line-height: 100px;
+    text-align: center;
+}
+
+/* 회원정보 */
+.join_privacy {
+    width: 1400px;
+    height: 920px;
+    margin: 0 auto;
+}
+
+.join_privacy ul {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.join_list ul  {
+    display: flex;
+    height: 60px;
+    line-height: 60px;
+}
+
+.join_list li:nth-of-type(1) {
+    width: 210px;
+}
+.join_list li:nth-of-type(2) input {
+    height: 40px;
+    padding: 0 20px;
+    outline: none;
+    border: 1px solid #dbdbdb;
+}
+
+.join_privacy img {
+    vertical-align: middle;
+}
+
+.join_privacy input::placeholder {
+    font-size: 1.2rem;
+}
+
+
+.join_passwd {
+    width: 500px;
+}
+
+.join_email select{
+    width: 120px;
+}
+
+/* .join_mobile_li = 전화 정렬을 위한 클래스 */
+.join_mobile_li {
+    display: flex;
+    align-items: center;
+}
+
+.join_mobile_li select {
+    margin-right:5px;
+}
+
+.join_mobile_li input {
+    margin: 0 5px;
+    width: 124px;
+}
+
+.join_number {
+    width: 70px;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #dbdbdb;
+}
+
+.join_btn {
+    width: 100px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #8e8e8e;
+    cursor: pointer;
+
+}
+
+.join_address {
+    height: 180px;
+}
+
+/* .join_address_li 주소 정렬 */
+.join_address_li {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    width: 790px;
+    height: 180px;
+}
+
+.join_address_li button {
+    margin: 0 20px 0 5px;
+}
+
+.join_address_li input:not(:nth-of-type(3)){
+    width: 460px;
+}
+
+.join_address_li input:nth-of-type(3){
+    margin-left: 5px;
+}
+
+
+
+/* .join_check = li (성별, sms수신여부, 이메일 수신여부) */
+.join_check {
+    display: flex;
+    line-height: 60px;
+}
+
+.join_check div {
+    display: flex;
+    align-items: center;
+}
+
+.join_check label{
+    margin: 0 20px 0 5px;
+}
+.join_check p{
+    display: inline-block;
+}
+
+
+
+/* 개인정보 활용 동의서 */
+.join_agreement {
+    width: 100%;
+    height: 500px;
+    padding-top: 15px;
+    background: rgba(255,202,212,0.5);
+    text-align: center;
+}
+.join_agreement>ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.join_agreement li>p:first-child {
+    margin: 10px 0;
+}
+
+.join_agreement_box {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.join_agreement_box::-webkit-scrollbar {
+    width: 5px;
+}
+
+.join_agreement_box::-webkit-scrollbar-thumb {
+    height: 30%;
+    background: #dbdbdb;
+    border-radius: 10px;
+}
+
+.join_agreement_boxy::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+.join_agreement_box p {
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.join_agreement_check {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.join_agreement_check div {
+    display: flex;
+    justify-content: center;
+}
+
+.join_agreement_check input {
+    margin-right: 2px;
+}
+
+/* .join_agr_check_txt = 전체 동의체크 문구 */
+.join_agr_check_txt {
+    margin: 50px 0;
+    font-size: 1.6rem;
+}
+
+/* .join_agree 회원가입 */
+.join_agree {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.join_agree input {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    border: none;
+    background: #000;
+    color: #fff;
+}

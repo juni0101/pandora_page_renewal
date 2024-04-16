@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="KO">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/header_transform.css">
+    <link rel="stylesheet" href="../css/list_Bracelets.css">
+    <link rel="icon" href="../assets/images/common/favicon.png">
+    <title>PANDORA</title>
+    <style>
+        #contents {
+            height: 2000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="top_notice">
+                <p>
+                    고객센터 전화응대 서비스 종료-문의하기 게시판을 통해 접수해
+                    주시면빠른상담 가능합니다.
+                </p>
+            </div>
+            <!-- //.top_notice -->
+            <div class="header_inner" id="header_inner">
+                <div class="logo" OnClick="location.href ='../index.html';" style="cursor: pointer;">
+                </div>
+                <nav>
+                    <!-- gnb=global navigation bar -->
+                    <ul class="gnb">
+                        <li>
+                            <a href="./about.html">Pandora</a>
+                        </li>
+                        <li>
+                            <a href="./notice.html">notice</a>
+                        </li>
+                        <li>
+                            <a href="./list_ring.html">Jewelry</a>
+                            <ul class="sub_list sub_list Jewelry">
+                                <li><a href="./list_ring.html">Ring</a></li>
+                                <li><a href="./list_earring.html">Earrings</a></li>
+                                <li><a href="./list_necklaces.html">Necklaces</a></li>
+                                <li><a href="./list_Bracelets.html">Bracelets</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="util">
+                    <div class="search">
+                        <button type="button" class="search_btn" id="searchHeaderBtn">
+                            Search button
+                        </button>
+                        <input class="ser_input" type="text" placeholder="SEARCH">
+                    </div>
+                    <!-- //.search -->
+                    <ul class="gnb_icon">
+                        <li>
+                            <a href="#">store</a>
+                        </li>
+                        <li>
+                            <a href="#">mypage</a>
+                            <div class="mypage_login">
+                                <p>My PANDORA</p>
+                                <p>PANDORA 온라인 회원만의 <br />특별한 혜택을 만나보세요.</p>
+                                <button onclick="location.href='/html/login.html'">로그인</button>
+                                <button onclick="location.href='/html/join.html'">회원가입</button>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">cart</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //.util -->
+            </div>
+            <!-- //.header_inner -->
+        </header>
+        <!-- //header -->
+        <div class="container_list2">
+            <!-- 섹션1 -->
+            <section id="sec1" class="sec pearallax">
+                <div class="inner_sec1">
+                    <div class="tit_sec1">
+                        <h1>브레이슬릿</h1>
+                    </div>
+                    <div class="txt_sec1">
+                        <p>스네이크 체인부터 뱅글, 메쉬, 링크까지 다양한 팔찌 스타일로<br>
+                            나만의 개성이 가득한 스타일 표현하세요.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="list__filter" class="inner">
+                <div id="filter">
+                    <ul class="dep1">
+                        <li>
+                            <a href="#">Category</a>
+                            <ul class="dep2">
+                                <li><input type="checkbox"> 참</li>
+                                <li><input type="checkbox"> 브레이슬릿</li>
+                                <li><input type="checkbox"> 링</li>
+                                <li><input type="checkbox"> 네크리스</li>
+                                <li><input type="checkbox"> 이어링</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Collections</a>
+                            <ul class="dep2" id="collections">
+                                <li><input type="checkbox"> 판도라 타임레스 (37)</li>
+                                <li><input type="checkbox"> 판도라 위시 (4)</li>
+                                <li><input type="checkbox"> 판도라 시그니처 (20)</li>
+                                <li><input type="checkbox"> 판도라 컬러 (6)</li>
+                                <li><input type="checkbox"> 판도라 패션 (5)</li>
+                                <li><input type="checkbox"> 판도라 미 (21)</li>
+                                <li><input type="checkbox"> 디즈니 x 판도라 (4)</li>
+                                <li><input type="checkbox"> 판도라 피플 (6)</li>
+                                <li><input type="checkbox"> 판도라 플레이스 (1)</li>
+                                <li><input type="checkbox"> 판도라 가든 (8)</li>
+                                <li><input type="checkbox"> 판도라 모멘츠 컬렉션 (18)</li>
+                                <li><input type="checkbox"> 마블 x 판도라 (1)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Compatible with</a>
+                            <ul class="dep2" id="with">
+                                <li><input type="checkbox"> 판도라 미 (12)
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Tenmes</a>
+                            <ul class="dep2" id="themes">
+                                <li><input type="checkbox"> 사랑 (9)</li>
+                                <li><input type="checkbox"> 심볼 (3)</li>
+                                <li><input type="checkbox"> 여행 (1)</li>
+                                <li><input type="checkbox"> 자연 (7)</li>
+                                <li><input type="checkbox"> 천체 (1)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Metal Color</a>
+                            <ul class="dep2" id="metal">
+                                <li>
+                                <li><input type="checkbox"><img src="../assets/images/list_ring/Silver.png" alt="실버"> 실버
+                                    (89)</li>
+                                <li><input type="checkbox"><img src="../assets/images/list_ring/PANDORARose.png"
+                                        alt="로즈골드">로즈골드 (45)</li>
+                                <li><input type="checkbox"><img src="../assets/images/list_ring/Gold.png" alt="골드"> 골드
+                                    (10)</li>
+                                <li><input type="checkbox"><img src="../assets/images/list_ring/TwoTone.png" alt="투톤">
+                                    투톤 (1)</li>
+                                <li><input type="checkbox"><img src="../assets/images/list_ring/Grey.png" alt="다크그레이">
+                                    다크그레이 (1)</li>
+                        </li>
+                    </ul>
+                    </li>
+                    <li>
+                        <a href="#">Collections</a>
+                        <ul class="dep2" id="color">
+                            <li><input type="checkbox"><img src="../assets/images/list_ring/black.png" alt="블랙"> 블랙 (3)
+                            </li>
+                            <li><input type="checkbox"><img src="../assets/images/list_ring/blue.png" alt="블루"> 블루 (13)
+                            </li>
+                            <li><input type="checkbox"><img src="../assets/images/list_ring/clear.png" alt="클리어"> 클리어
+                                (74)</li>
+                            <li><input type="checkbox"><img src="../assets/images/list_ring/green.png" alt="그린"> 그린 (3)
+                            </li>
+                            <li><input type="checkbox"><img src="../assets/images/list_ring/multi.png" alt="멀티컬러"> 멀티컬러
+                                (5)</li>
+                            <li><input type="checkbox"><img src="../assets/images/list_ring/pink.png" alt="팡크"> 핑크 (6)
+                            </li>
+                            <li><input type="checkbox"><img src="../assets/images/list_ring/purple.png" alt="퍼플"> 퍼플 (5)
+                            </li>
+                            <li><input type="checkbox"><img src="../assets/images/list_ring/red.png" alt="레드"> 레드 (7)
+                            </li>
+                            <li><input type="checkbox"><img src="../assets/images/list_ring/white.png" alt="화이트"> 화이트
+                                (2)</li>
+                            <li><input type="checkbox"><img src="../assets/images/list_ring/yellow.png" alt="옐로"> 옐로 (1)
+                            </li>
+                            <li><input type="checkbox"> 색상없음 (27)</li>
+                    </li>
+                    </ul>
+                    </li>
+                    <li>
+                        <a href="#">Size</a>
+                        <ul class="dep2" id="size">
+                            <li><input type="checkbox"> 46 (1)</li>
+                            <li><input type="checkbox"> 48 (132)</li>
+                            <li><input type="checkbox"> 50 (143)</li>
+                            <li><input type="checkbox"> 52 (144)</li>
+                            <li><input type="checkbox"> 54 (143)</li>
+                            <li><input type="checkbox"> 56 (142)</li>
+                            <li><input type="checkbox"> 58 (107)</li>
+                            <li><input type="checkbox"> 60 (71)</li>
+                            <li><input type="checkbox"> 62 (2)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Price</a>
+                        <ul class="dep2" id="price">
+                            <li><input type="checkbox"><a href="#">~ &#8361; 58,000 (4)</a></li>
+                            <li><input type="checkbox"><a href="#">~ &#8361; 78,000 (54)</a></li>
+                            <li><input type="checkbox"><a href="#">~ &#8361; 98,000 (27)</a></li>
+                            <li><input type="checkbox"><a href="#">~ &#8361; 138,000 (35)</a></li>
+                            <li><input type="checkbox"><a href="#">~ &#8361; 138,000 이상 (26)</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                    <ul class="right">
+                        <li><label for="selectSort">Sort</label></li>
+                        <div class="select-box">
+                            <select id="selectSort" name="selectSort">
+                                <option value="1">신상품</option>
+                                <option value="2">베스트셀러</option>
+                                <option value="3">우수 평점 순</option>
+                                <option value="4">낮은 가격 순</option>
+                                <option value="5">높은 가격 순</option>
+                            </select>
+                        </div>
+                    </ul>
+                </div> <!-- #filter -->
+            </section>
+            <!-- 섹션2 -->
+            <section id="sec2" class="sec sec23">
+                <div id="slideShow">
+                    <h2>베스트 상품</h2>
+                    <ul class="slides">
+                        <li class="list2_2"><img class="sec_img1" src="../assets/images/list_bracelets/best1.png"
+                                alt="best1"><span>BEST<BR>1</span>
+                            <p>판도라 로즈 리플렉션 브레이슬릿</p>
+                            <hr>
+                            <p>￦258,000</p>
+                        </li>
+                        <li class="list2_2"><img class="sec_img1" src="../assets/images/list_bracelets/best2.png"
+                                alt="best2"><span>BEST<BR>2</span>
+                            <p>모멘츠 파베 캡스 오픈 뱅글</p>
+                            <hr>
+                            <p>￦198,000</p>
+                        </li>
+                        <li class="list2_2"><img class="sec_img1" src="../assets/images/list_bracelets/best3.png"
+                                alt="best3"><span>BEST<BR>3</span>
+                            <p>판도라 리플렉션 메쉬 브레이슬릿</p>
+                            <hr>
+                            <p>Sold out</p>
+                        </li>
+                        <li class="list2_2"><img class="sec_img1" src="../assets/images/list_bracelets/best4.png"
+                                alt="best4"><span>BEST<BR>4</span>
+                            <p>모멘츠 오픈 뱅글</p>
+                            <hr>
+                            <p>￦128,000</p>
+                        </li>
+                        <li class="list2_2"><img class="sec_img1" src="../assets/images/list_bracelets/best5.png"
+                                alt="best4"><span>BEST<BR>5</span>
+                            <p>모멘츠 스파클링 파베 하트 브레이슬릿</p>
+                            <hr>
+                            <p>￦138,000</p>
+                        </li>
+                        <li class="list2_2"><img class="sec_img1" src="../assets/images/list_bracelets/best6.png"
+                                alt="best4"><span>BEST<BR>6</span>
+                            <p>판도라 리플렉션 멀티 스네이크 체인스 브레이슬릿</p>
+                            <hr>
+                            <p>Sold out</p>
+                        </li>
+                        <li class="list2_2"><img class="sec_img1" src="../assets/images/list_bracelets/best7.png"
+                                alt="best4"><span>BEST<BR>7</span>
+                            <p>판도라 리플렉션 메쉬 브레이슬릿</p>
+                            <hr>
+                            <p>￦118,000</p>
+                        </li>
+                        <li class="list2_2"><img class="sec_img1" src="../assets/images/list_bracelets/best8.png"
+                                alt="best4"><span>BEST<BR>8</span>
+                            <p>블루 & 클리어 스파클 슬라이더 브레이슬릿</p>
+                            <hr>
+                            <p>￦118,000</p>
+                        </li>
+                    </ul>
+                    <p class="controller">
+                        <!-- &lang: 왼쪽 방향 화살표
+                        &rang: 오른쪽 방향 화살표 -->
+                        <span class="prev"><img src="../assets/images/list_ring/prev.svg" alt="prev"></span>
+                        <span class="next"><img src="../assets/images/list_ring/next.svg" alt="prev"></span>
+                    </p>
+                </div><!-- #sec2-->
+            </section>
+            <!-- 섹션3 -->
+            <section id="sec3" class="sec sec24">
+                <ul class="culerfix">
+                    <li class="list2_2"><img class="sec_img2" src="../assets/images/list_bracelets/sec1_img1.png"
+                            alt="이벤트1">
+                        <div class='info-box'>
+                            <p>비즈 & 파베 브레이슬릿</p>
+                        </div>
+                        <div class="price">
+                            <p>￦118,000</p>
+                        </div>
+                    </li>
+                    <li class="list2_2"><img class="sec_img2" src="../assets/images/list_bracelets/sec1_img2.png"
+                            alt="이벤트2">
+                        <div class='info-box'>
+                            <p>판도라 시그니처 파베 볼드 체인 브레이슬릿</p>
+                        </div>
+                        <div class="price">
+                            <p>￦178,000</p>
+                        </div>
+                    </li>
+                    <li class="list2_2"><img class="sec_img2" src="../assets/images/list_bracelets/sec1_img3.png"
+                            alt="이벤트3">
+                        <div class='info-box'>
+                            <p>판도라 시그니처 투톤 로고 & 파베 체인 브레이슬릿</p>
+                        </div>
+                        <div class="price">
+                            <p>￦178,000</p>
+                        </div>
+                    </li>
+                    <li class="list2_2"><img class="sec_img2" src="../assets/images/list_bracelets/sec1_img4.png"
+                            alt="이벤트4">
+                        <div class='info-box'>
+                            <p>판도라 시그니처 투톤 I-D 파베 뱅글</p>
+                        </div>
+                        <div class="price">
+                            <p>￦298,000</p>
+                        </div>
+                    <li class="list2_2"><img class="sec_img2" src="../assets/images/list_bracelets/sec1_img6.png"
+                            alt="이벤트5">
+                        <div class='info-box'>
+                            <p>판도라 모멘츠 스터디드 체인 브레이슬릿</p>
+                        </div>
+                        <div class="price">
+                            <p>￦298,000</p>
+                        </div>
+                    </li>
+                    <li class="list2_2"><img class="sec_img2" src="../assets/images/list_bracelets/sec1_img5.png"
+                            alt="이벤트6">
+                        <div class='info-box'>
+                            <p>판도라 모멘츠 스터디드 체인 브레이슬릿</p>
+                        </div>
+                        <div class="price">
+                            <p>Sold out</p>
+                        </div>
+                    </li>
+                    <li class="list2_2"><img class="sec_img2" src="../assets/images/list_bracelets/sec1_img7.png"
+                            alt="이벤트7">
+                        <div class='info-box'>
+                            <p>판도라 모멘츠 라운드 클라습 블루 브레이디드 래더 브레이슬릿</p>
+                        </div>
+                        <div class="price">
+                            <p>￦98,000</p>
+                        </div>
+                    </li>
+                    <li class="list2_2"><img class="sec_img2" src="../assets/images/list_bracelets/sec1_img8.png"
+                            alt="이벤트8">
+                        <div class='info-box'>
+                            <p>판도라모멘츠 스파클링 인피니티하트 클라습 브레이슬</p>
+                        </div>
+                        <div class="price">
+                            <p>￦138,000</p>
+                        </div>
+                    </li>
+                    <li class="list2_2"><img class="sec_img2" src="../assets/images/list_bracelets/sec1_img1.png"
+                            alt="이벤트1">
+                        <div class='info-box'>
+                            <p>비즈 & 파베 브레이슬릿</p>
+                        </div>
+                        <div class="price">
+                            <p>￦118,000</p>
+                        </div>
+                    </li>
+                    <li class="list2_2"><img class="sec_img2" src="../assets/images/list_bracelets/sec1_img2.png"
+                            alt="이벤트2">
+                        <div class='info-box'>
+                            <p>판도라 시그니처 파베 볼드 체인 브레이슬릿</p>
+                        </div>
+                        <div class="price">
+                            <p>￦178,000</p>
+                        </div>
+                    </li>
+                    <li class="list2_2"><img class="sec_img2" src="../assets/images/list_bracelets/sec1_img3.png"
+                            alt="이벤트3">
+                        <div class='info-box'>
+                            <p>판도라 시그니처 투톤 로고 & 파베 체인 브레이슬릿</p>
+                        </div>
+                        <div class="price">
+                            <p>￦178,000</p>
+                        </div>
+                    </li>
+                    <li class="list2_2"><img class="sec_img2" src="../assets/images/list_bracelets/sec1_img4.png"
+                            alt="이벤트4">
+                        <div class='info-box'>
+                            <p>판도라 시그니처 투톤 I-D 파베 뱅글</p>
+                        </div>
+                        <div class="price">
+                            <p>￦298,000</p>
+                        </div>
+                    <li class="list2_2"><img class="sec_img2" src="../assets/images/list_bracelets/sec1_img6.png"
+                            alt="이벤트5">
+                        <div class='info-box'>
+                            <p>판도라 모멘츠 스터디드 체인 브레이슬릿</p>
+                        </div>
+                        <div class="price">
+                            <p>￦298,000</p>
+                        </div>
+                    </li>
+                    <li class="list2_2"><img class="sec_img2" src="../assets/images/list_bracelets/sec1_img5.png"
+                            alt="이벤트6">
+                        <div class='info-box'>
+                            <p>판도라 모멘츠 스터디드 체인 브레이슬릿</p>
+                        </div>
+                        <div class="price">
+                            <p>Sold out</p>
+                        </div>
+                    </li>
+                    <li class="list2_2"><img class="sec_img2" src="../assets/images/list_bracelets/sec1_img7.png"
+                            alt="이벤트7">
+                        <div class='info-box'>
+                            <p>판도라 모멘츠 라운드 클라습 블루 브레이디드 래더 브레이슬릿</p>
+                        </div>
+                        <div class="price">
+                            <p>￦98,000</p>
+                        </div>
+                    </li>
+                    <li class="list2_2"><img class="sec_img2" src="../assets/images/list_bracelets/sec1_img8.png"
+                            alt="이벤트8">
+                        <div class='info-box'>
+                            <p>판도라모멘츠 스파클링 인피니티하트 클라습 브레이슬</p>
+                        </div>
+                        <div class="price">
+                            <p>￦138,000</p>
+                        </div>
+                    </li>
+                </ul>
+            </section><!-- #sec3 -->
+            <!-- 섹션4 -->
+            <div id="sec4">
+                <ul class="bt">
+                    <li>
+                        <a href="#">
+                            <span>STIRE EVENT</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>FREE SHIPPING</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>DAILY CHECK</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>MOBILE STORE</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div> <!-- //#contents -->
+    </div><!-- #sec1 -->
+    <footer>
+        <div class="footer_inner">
+            <!-- fnb=footer navigation bar -->
+            <ul class="fnb claerfix">
+                <li>Customer Service
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">자주하는 질문</a></li>
+                        <li><a href="#">매장찾기</a></li>
+                        <li><a href="#">상품 관리법</a></li>
+                        <li><a href="#">품질보증</a></li>
+                        <li><a href="#">사이즈 가이드</a></li>
+                        <li><a href="#">문의하기</a></li>
+                    </ul>
+                </li>
+                <li>Account
+                    <ul>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">위시리스트</a></li>
+                        <li><a href="#">배송조회</a></li>
+                    </ul>
+                </li>
+                <li>About Pandora
+                    <ul>
+                        <li><a href="#">브랜드 알아보기</a></li>
+                        <li><a href="#">연혁</a></li>
+                    </ul>
+                </li>
+                <li>Legal
+                    <ul>
+                        <li><a href="#">회원정책</a></li>
+                        <li><a href="#">배송 및 교환 정책</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이용약관</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="f_info1 claerfix">
+                <ul class="f_about">
+                    <li>
+                        <p>㈜스타럭스 대표이사 : 안종훈 ㅣ 사업자등록번호 : 120-86-24028 ㅣ 통신판매업등록번호 : 서울 강남 – 4364호</p>
+                    </li>
+                    <li>
+                        <p>매장 : 서울특별시 강남구 테헤란로87길 22 한국도심공항 지하 1층 R108호 판도라매장</p>
+                    </li>
+                    <li>
+                        <p>E-Mail : 판도라 공식 온라인몰 (pandoracs@starluxe.co.kr) ㅣ</p>
+                    </li>
+                </ul>
+                <ul class="sns">
+                    <li><a href="https://pf.kakao.com/_VXgvj" target="_blank">sns kakaotalk</a></li>
+                    <li><a href="https://www.facebook.com/PandoraSouthKorea" target="_blank">sns
+                            facebook</a>
+                    </li>
+                    <li><a href="https://www.youtube.com/channel/UCnc-_ehFHkg2OOn8wqGS4iw" target="_blank">sns
+                            youtube</a></li>
+                    <li><a href="https://www.instagram.com/theofficialpandora/" target="_blank">sns
+                            instagram</a>
+                    </li>
+                    <li><a href="https://www.pinterest.co.kr/officialpandora/" target="_blank">sns
+                            pinterest</a>
+                    </li>
+                </ul>
+            </div> <!-- //.f_info1 -->
+            <div class="f_info2 claerfix">
+                <p class="copyright">COPYRIGHT 2023 PANDORA. ALL RIGHTS RESERVED.</p>
+                <p class="inipay">inipay</p>
+            </div> <!-- //.f_info2 -->
+        </div> <!-- //.footer_inner -->
+    </footer> <!-- footer -->
+    </div> <!-- //#wrap -->
+    <script src="../js/header.js"></script>
+    <script src="../js/login&join.js"></script>
+    <script src="../js/list_ring.js"></script>
+</body>

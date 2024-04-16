@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="KO">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/notice.css">
+    <link rel="icon" href="../assets/images/common/favicon.png">
+    <title>PANDORA</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="top_notice">
+                <p>
+                    고객센터 전화응대 서비스 종료-문의하기 게시판을 통해 접수해
+                    주시면빠른상담 가능합니다.
+                </p>
+            </div>
+            <!-- //.top_notice -->
+            <div class="header_inner" id="header_inner">
+                <div class="logo" OnClick="location.href ='../index.html';" style="cursor: pointer;">
+                </div>
+                <nav>
+                    <!-- gnb=global navigation bar -->
+                    <ul class="gnb">
+                        <li>
+                            <a href="./about.html">Pandora</a>
+                        </li>
+                        <li>
+                            <a href="./notice.html">notice</a>
+                        </li>
+                        <li>
+                            <a href="./list_ring.html">Jewelry</a>
+                            <ul class="sub_list Jewelry">
+                                <li><a href="./list_ring.html">Ring</a></li>
+                                <li><a href="./list_earring.html">Earrings</a></li>
+                                <li><a href="./list_necklaces.html">Necklaces</a></li>
+                                <li><a href="./list_Bracelets.html">Bracelets</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="util">
+                    <div class="search">
+                        <button type="button" class="search_btn" id="searchHeaderBtn">
+                            Search button
+                        </button>
+                        <input class="ser_input" type="text" placeholder="SEARCH">
+                    </div>
+                    <!-- //.search -->
+                    <ul class="gnb_icon">
+                        <li>
+                            <a href="#">store</a>
+                        </li>
+                        <li>
+                            <a href="#">mypage</a>
+                            <div class="mypage_login">
+                                <p>My PANDORA</p>
+                                <p>PANDORA 온라인 회원만의 <br>특별한 혜택을 만나보세요.</p>
+
+                                <button onclick="location.href='/html/login.html'">로그인</button>
+                                <button onclick="location.href='/html/join.html'">회원가입</button>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">cart</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //.util -->
+            </div>
+            <!-- //.header_inner -->
+        </header>
+
+        <!-- 공지사항 -->
+        <div id="notice">
+            <div class="nmenu">
+                <ul>
+                    <li class="m">
+                        <span>Customer Service</span>
+                    </li>
+                    <li>
+                        <a href="./notice.html">공지사항</a>
+                    </li>
+                    <li>
+                        <a href="./list_necklaces.html">목걸이</a>
+                    </li>
+                    <li>
+                        <a href="./list_earring.html">귀걸이</a>
+                    </li>
+                    <li>
+                        <a href="./list_ring.html">반지</a>
+                    </li>
+                    <li>
+                        <a href="./list_Bracelets.html">팔찌</a>
+                    </li>
+                    <li class="m">
+                        <span>About Pandora</span>
+                    </li>
+                    <li>
+                        <a href="./about.html">기업소개</a>
+                    </li>
+                    <li class="m">
+                        <span>My Pandora</span>
+                    </li>
+                    <li>
+                        <a href="./login.html">로그인</a>
+                    </li>
+                    <li>
+                        <a href="./join.html">회원가입</a>
+                    </li>
+                </ul>
+            </div><!-- //nmenu -->
+            <div class="ntable">
+                <div>
+                    <h2>공지사항</h2>
+                    <div class="nsearch">
+                        <select name="list">
+                            <option value="">제목</option>
+                            <option value="">내용</option>
+                            <option value="">제목+내용</option>
+                            <option value="">이름</option>
+                        </select>
+                        <div class="searchb">
+                            <input type="text" name="search" placeholder="검색어를 입력해 주세요">
+                            <button type="submit"><img src="../assets/images/notice/search.svg" alt="검색버튼"></button>
+                        </div>
+                    </div><!-- //nsearch -->
+                </div>
+                <table class="t1">
+                    <tr>
+                        <th class="th1" scope="col">No</th>
+                        <th class="th2" scope="col">Title</th>
+                        <th class="th3" scope="col">Date</th>
+                    </tr>
+                    <tr>
+                        <td><span class="t_num">7</span></td>
+                        <td><a href="#"><span class="t_tit">오프라인 | MORE THAN A GIFT</span></a></td>
+                        <td><span class="t_date">2022-12-15</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="t_num">6</span></td>
+                        <td><a href="#"><span class="t_tit">오프라인 | 홀리데이 리미티드 뱅글 증정</span></a></td>
+                        <td><span class="t_date">2022-12-15</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="t_num">5</span></td>
+                        <td><a href="#"><span class="t_tit">판도라 패키지 리뉴얼 안내</span></a></td>
+                        <td><span class="t_date">2021-10-15</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="t_num">4</span></td>
+                        <td><a href="#"><span class="t_tit">공식 온라인몰 교환 및 환불 접수 안내</span></a></td>
+                        <td><span class="t_date">2021-08-31</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="t_num">3</span></td>
+                        <td><a href="#"><span class="t_tit">판도라 온라인 채널별 교환 반품 링크</span></a></td>
+                        <td><span class="t_date">2021-08-17</span></td>
+                    </tr>
+                </table>
+                <!-- ========================================================== -->
+                <table class="t2 hide">
+                    <tr>
+                        <th class="th1" scope="col">No</th>
+                        <th class="th2" scope="col">Title</th>
+                        <th class="th3" scope="col">Date</th>
+                    </tr>
+                    <tr>
+                        <td><span class="t_num">2</span></td>
+                        <td><a href="#"><span class="t_tit">판도라 이용약관 내용 변경(추가) 사전안내</span></a></td>
+                        <td><span class="t_date">2020-12-04</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="t_num">1</span></td>
+                        <td><a href="#"><span class="t_tit">코로나19 바이러스로 인한 택배 배송 안내</span></a></td>
+                        <td><span class="t_date">2020-04-06</span></td>
+                    </tr>
+                </table>
+                <div class="listn">
+                    <span class="nbtn1">1</span>
+                    <span class="nbtn2">2</span>
+                </div>
+            </div><!-- //ntable -->
+            <div class="n_slide">
+                <ul>
+                    <li><img src="../assets/images/notice/disney_h2.png" alt="디즈니"></li>
+                    <li><img src="../assets/images/notice/marvel_h2.png" alt="마블"></li>
+                    <li><img src="../assets/images/notice/starwars_h2.png" alt="스타워즈"></li>
+                    <li><img src="../assets/images/notice/disney_h2.png" alt="디즈니"></li>
+                </ul>
+            </div>
+        </div><!-- //notice -->
+        <footer>
+            <div class="footer_inner">
+                <!-- fnb=footer navigation bar -->
+                <ul class="fnb">
+                    <li>Customer Service
+                        <ul>
+                            <li><a href="./notice.html">공지사항</a></li>
+                            <li><a href="#">자주하는 질문</a></li>
+                            <li><a href="#">매장찾기</a></li>
+                            <li><a href="#">상품 관리법</a></li>
+                            <li><a href="#">품질보증</a></li>
+                            <li><a href="#">사이즈 가이드</a></li>
+                            <li><a href="#">문의하기</a></li>
+                        </ul>
+                    </li>
+                    <li>Account
+                        <ul>
+                            <li><a href="./login.html">로그인</a></li>
+                            <li><a href="./join.html">회원가입</a></li>
+                            <li><a href="#">위시리스트</a></li>
+                            <li><a href="#">배송조회</a></li>
+                        </ul>
+                    </li>
+                    <li>About Pandora
+                        <ul>
+                            <li><a href="./about.html">브랜드 알아보기</a></li>
+                            <li><a href="./about.html">연혁</a></li>
+                        </ul>
+                    </li>
+                    <li>Legal
+                        <ul>
+                            <li><a href="#">회원정책</a></li>
+                            <li><a href="#">배송 및 교환 정책</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">이용약관</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="f_info1">
+                    <ul class="f_about">
+                        <li>
+                            <p>㈜스타럭스 대표이사 : 안종훈 ㅣ 사업자등록번호 : 120-86-24028 ㅣ 통신판매업등록번호 : 서울 강남 – 4364호</p>
+                        </li>
+                        <li>
+                            <p>매장 : 서울특별시 강남구 테헤란로87길 22 한국도심공항 지하 1층 R108호 판도라매장</p>
+                        </li>
+                        <li>
+                            <p>E-Mail : 판도라 공식 온라인몰 (pandoracs@starluxe.co.kr) ㅣ</p>
+                        </li>
+                    </ul>
+                    <ul class="sns">
+                        <li><a href="https://pf.kakao.com/_VXgvj" target="_blank">sns kakaotalk</a></li>
+                        <li><a href="https://www.facebook.com/PandoraSouthKorea" target="_blank">sns
+                                facebook</a>
+                        </li>
+                        <li><a href="https://www.youtube.com/channel/UCnc-_ehFHkg2OOn8wqGS4iw" target="_blank">sns
+                                youtube</a></li>
+                        <li><a href="https://www.instagram.com/theofficialpandora/" target="_blank">sns
+                                instagram</a>
+                        </li>
+                        <li><a href="https://www.pinterest.co.kr/officialpandora/" target="_blank">sns
+                                pinterest</a>
+                        </li>
+                    </ul>
+                </div> <!-- //.f_info1 -->
+                <div class="f_info2">
+                    <p class="copyright">COPYRIGHT 2023 PANDORA. ALL RIGHTS RESERVED.</p>
+                    <p class="inipay">inipay</p>
+                </div> <!-- //.f_info2 -->
+            </div> <!-- //.footer_inner -->
+        </footer> <!-- footer -->
+    </div> <!-- //#wrap -->
+    <script src="../js/notice_table.js"></script>
+    <script src="../js/login&join.js"></script>
+</body>
+
+</html>

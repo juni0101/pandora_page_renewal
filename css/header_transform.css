@@ -1,0 +1,333 @@
+@charset "utf-8";
+@import url(./common.css);
+/* scroll_down hover */
+
+/* 스크롤 내릴 때 .header_inner의 scroll_down 클래스 추가하여 css 적용 */
+.scroll_down {
+    color: black;
+    background-color: #fff;
+  }
+  .scroll_down .gnb > li a {
+    color: black;
+  }
+  .scroll_down:hover {
+    height: 240px;
+    color: black;
+    background: #fff;
+    width: 100%;
+  }
+  
+  .scroll_down:hover .sub_list {
+    display: block;
+  }
+  
+  .scroll_down .logo {
+    background: url(../assets/images/common/logo_pandora.svg) no-repeat center;
+  }
+  .scroll_down .search {
+    border: 1px solid #27251f;
+  }
+  
+  .scroll_down .search button {
+    background: url(../assets/images/common/ico_search.svg) no-repeat center
+      center/20px;
+  }
+  
+  
+  .scroll_down .gnb_icon li:nth-of-type(1) {
+    background: url(../assets/images/common/ico_store.svg) no-repeat center center/16px;
+  }
+  .scroll_down .gnb_icon li:nth-of-type(2) {
+    background: url(../assets/images/common/ico_mypage.svg) no-repeat center
+    center/20px;
+  }
+  .scroll_down .gnb_icon li:nth-of-type(3) {
+    background: url(../assets/images/common/ico_cart.svg) no-repeat center
+    center/18px;
+  }
+  .scroll_down .search input{
+    height: 30px;
+    padding: 1px 2px;
+    color: black;
+    border: none;
+    background-color: transparent;
+    outline: none;
+  }
+  .scroll_down .ser_input::placeholder {
+    /* font-weight: lighter; */
+    letter-spacing: 2px;
+    font-size: 12px;
+    color: black;
+  }
+  
+  
+  
+  /* ============================================== */
+  
+/* header */
+header {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 105px;
+    top: 0;
+    left: 0;
+  }
+  
+  .top_notice {
+    height: 35px;
+    line-height: 35px;
+    background: white;
+    border-bottom: 1px solid #f3f3f3;
+  }
+  
+  .header_inner,
+  .scroll_down {
+    display: flex;
+    max-width: 1600px;
+    height: 70px;
+    margin: 0 auto;
+    padding: 0 80px;
+  }
+  .header_inner {
+    /* 배경 그라디언트 */
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.3) 1%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+  
+  
+  .gnb li {
+    display: inline-block;
+    width: 100px;
+    height: 70px;
+  }
+  .gnb li a {
+    color: white;
+  }
+  .sub_list {
+    display: none;
+  }
+  .sub_list li a {
+    color: black;
+  }
+  
+  .logo {
+    display: flex;
+    width: 120px;
+    height: 50px;
+    margin: 5px 150px 0 20px;
+    background: url(../assets/images/common/logo_pandora_wt.svg) no-repeat center
+      center;
+  }
+  
+  .logo a {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    text-indent: -999rem;
+  }
+  
+  nav {
+    height: 70px;
+    margin-right: auto;
+  }
+  
+  .gnb {
+    display: flex;
+    position: relative;
+  }
+  
+  .gnb > li {
+    margin-right: 20px;
+    padding: 0 16px;
+    line-height: 70px;
+  }
+  .gnb li a:hover {
+    border-bottom: 1px solid #fecad4;
+    padding-bottom: 4px;
+  }
+  .sub_list li a:hover {
+    opacity: 0.7;
+    border-bottom: none;
+    width: 30px;
+  }
+  
+  .lnb {
+    display: none;
+  }
+  
+  .util {
+    float: right;
+    display: flex;
+    width: 400px;
+    height: 70px;
+    align-items: center;
+  }
+  
+  .search {
+    width: 240px;
+    height: 40px;
+    line-height: normal;
+    border: 1px solid #fff;
+    border-radius: 2px;
+  }
+  
+  
+  .search_btn {
+    display: inline-block;
+    width: 40px;
+    height: 38px;
+    background: url(../assets/images/common/ico_search_wt.svg) no-repeat center
+      center/20px;
+    text-indent: -999rem;
+  }
+  
+  .header_inner .search input {
+    height: 30px;
+    padding: 1px 2px;
+    color: white;
+    border: none;
+    background-color: transparent;
+    outline: none;
+  }
+  
+  .header_inner .ser_input::placeholder {
+    /* font-weight: lighter; */
+    letter-spacing: 2px;
+    font-size: 12px;
+    color: white;
+  }
+  
+  
+  /* .gnb_icon {
+      display: flex;
+  } */
+  .gnb_icon {
+    margin-left: 12px;
+    display: flex;
+  }
+  .gnb_icon li {
+    width: 40px;
+    height: 38px;
+    margin-left: 12px;
+  }
+  
+  .gnb_icon li a {
+    display: inline-block;
+    width: 40px;
+    height: 38px;
+    text-indent: -999rem;
+  }
+  
+  .gnb_icon li:nth-of-type(1) {
+    background: url(../assets/images/common/ico_store_wr.svg) no-repeat center
+      center/16px;
+  }
+  
+  .gnb_icon li:nth-of-type(2) {
+    background: url(../assets/images/common/ico_mypage_wt.svg) no-repeat center
+      center/20px;
+  }
+  
+  .gnb_icon li:nth-of-type(3) {
+    background: url(../assets/images/common/ico_cart_wt.svg) no-repeat center
+      center/18px;
+  }
+  
+/* footer */
+footer {
+  width: 100%;
+  height: 434px;
+  background-color: #f0f0f0;
+}
+
+.footer_inner {
+  width: 1600px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.fnb {
+  display: flex;
+  width: 1440px;
+  padding-top: 60px;
+}
+
+.fnb>li {
+  width: 360px;
+}
+
+.fnb>li>ul {
+  margin-top: 20px;
+}
+
+.fnb ul li {
+  height: 24px;
+  line-height: 24px;
+}
+
+.f_info1 {
+  display: flex;
+  width: 1440px;
+  height: 64px;
+  margin: 16px 0 5px;
+}
+
+.f_about li:nth-of-type(2) {
+  margin: 8px 0;
+}
+
+.sns {
+  display: flex;
+  margin-left: auto;
+}
+
+.sns li {
+  width: 50px;
+  height: 50px;
+}
+
+.sns li a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-indent: -999rem;
+}
+
+.sns li:nth-of-type(1) {
+  background: url(../assets/images/common/sns_kakaotalk.png) no-repeat center center/18px;
+}
+
+.sns li:nth-of-type(2) {
+  background: url(../assets/images/common/sns_facebook.png) no-repeat center center/10px;
+}
+
+.sns li:nth-of-type(3) {
+  background: url(../assets/images/common/sns_youtube.svg) no-repeat center center/18px;
+}
+
+.sns li:nth-of-type(4) {
+  background: url(../assets/images/common/sns_instagram.svg) no-repeat center center/18px;
+}
+
+.sns li:nth-of-type(5) {
+  background: url(../assets/images/common/sns_pinterest.svg) no-repeat center center/18px;
+}
+
+.f_info2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.inipay {
+  width: 50px;
+  height: 50px;
+  vertical-align: top;
+  margin-left: auto;
+  background: url(../assets/images/common/ico_inipay.png) no-repeat center center/50px;
+}

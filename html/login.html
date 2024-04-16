@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="KO">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="icon" href="../assets/images/common/favicon.png">
+    <title>PANDORA</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="top_notice">
+                <p>
+                    고객센터 전화응대 서비스 종료-문의하기 게시판을 통해 접수해
+                    주시면빠른상담 가능합니다.
+                </p>
+            </div>
+            <!-- //.top_notice -->
+            <div class="header_inner" id="header_inner">
+                <div class="logo" OnClick="location.href ='../index.html';" style="cursor: pointer;">
+                </div>
+                <nav>
+                    <!-- gnb=global navigation bar -->
+                    <ul class="gnb">
+                        <li>
+                            <a href="./about.html">Pandora</a>
+                        </li>
+                        <li>
+                            <a href="./notice.html">notice</a>
+                        </li>
+                        <li>
+                            <a href="./list_ring.html">Jewelry</a>
+                            <ul class="sub_list Jewelry">
+                                <li><a href="./list_ring.html">Ring</a></li>
+                                <li><a href="./list_earring.html">Earrings</a></li>
+                                <li><a href="./list_necklaces.html">Necklaces</a></li>
+                                <li><a href="./list_Bracelets.html">Bracelets</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="util">
+                    <div class="search">
+                        <button type="button" class="search_btn" id="searchHeaderBtn">
+                            Search button
+                        </button>
+                        <input class="ser_input" type="text" placeholder="SEARCH">
+                    </div>
+                    <!-- //.search -->
+                    <ul class="gnb_icon">
+                        <li>
+                            <a href="#">store</a>
+                        </li>
+                        <li>
+                            <a href="#">mypage</a>
+                            <div class="mypage_login">
+                                <p>My PANDORA</p>
+                                <p>PANDORA 온라인 회원만의 <br>특별한 혜택을 만나보세요.</p>
+
+                                <button onclick="location.href='./login.html'">로그인</button>
+                                <button onclick="location.href='./join.html'">회원가입</button>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">cart</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //.util -->
+            </div>
+            <!-- //.header_inner -->
+        </header>
+        <!-- login -->
+        <div id="login">
+            <div class="l_banner">
+                <h2>LOGIN</h2>
+                <div class="slide_container">
+                    <div class="slide">
+                        <div class="simg">
+                            <img src="../assets/images/login/disney.png" alt="디즈니">
+                        </div>
+                        <div class="simg">
+                            <img src="../assets/images/login/marvel.png" alt="마블">
+                        </div>
+                        <div class="simg">
+                            <img src="../assets/images/login/starwars.png" alt="스타워즈">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="l_content">
+                <div class="l_member">
+                    <form>
+                        <fieldset>
+                            <legend>회원로그인</legend>
+                            <div class="l_id">
+                                <input type="text" name="user_id" placeholder="아이디">
+                            </div>
+                            <div class="l_pw">
+                                <input type="password" name="user_pw" placeholder="비밀번호">
+                            </div>
+                            <div class="l_chk_b">
+                                <input type="checkbox" name="save_id" id="save_id">
+                                <label for="save_id">아이디 저장</label>
+                                <input type="checkbox" name="auto_login" id="auto_login">
+                                <label for="auto_login">자동 로그인</label>
+                            </div>
+                            <button class="l_button" type="submit">로그인</button>
+                        </fieldset>
+                        <ul class="l_help">
+                            <li><a href="#">아이디/비밀번호 찾기</a></li>
+                            <li><a href="#">휴면해제</a></li>
+                            <li><a href="./join.html">회원가입</a></li>
+                        </ul>
+                    </form>
+                    <div class="l_sns">
+                        <div>
+                            다른 계정으로<br>
+                            로그인하기
+                        </div>
+                        <ul class="sns_login">
+                            <li><a href="#"><img src="../assets/images/login/kakao_b.svg" alt="kakao"></a></li>
+                            <li><a href="#"><img src="../assets/images/login/naver_b.svg" alt="naver"></a></li>
+                            <li><a href="#"><img src="../assets/images/login/google_b.svg" alt="google"></a></li>
+                        </ul>
+                    </div><!-- //l_sns -->
+                </div><!-- //l_member -->
+                <div class="line"></div>
+                <div class="non_member">
+                    <form>
+                        <fieldset>
+                            <legend>비회원 주문조회</legend>
+                            <div class="l_name">
+                                <input type="text" name="nonuser_name" placeholder="이름">
+                            </div>
+                            <div class="l_ordernumber">
+                                <input type="text" name="nonuser_or_num" placeholder="주문번호">
+                            </div>
+                            <div class="l_pw2">
+                                <input type="password" name="nonuser_pw" placeholder="비밀번호">
+                            </div>
+                            <button class="l_order_button" type="submit">주문조회</button>
+                            <button class="l_find_button" type="submit">주문번호/비밀번호 찾기</button>
+                        </fieldset>
+                    </form>
+                </div><!-- //non_member -->
+            </div><!-- //l_flex -->
+        </div> <!-- //login -->
+
+        <footer>
+            <div class="footer_inner">
+                <!-- fnb=footer navigation bar -->
+                <ul class="fnb">
+                    <li>Customer Service
+                        <ul>
+                            <li><a href="./notice.html">공지사항</a></li>
+                            <li><a href="#">자주하는 질문</a></li>
+                            <li><a href="#">매장찾기</a></li>
+                            <li><a href="#">상품 관리법</a></li>
+                            <li><a href="#">품질보증</a></li>
+                            <li><a href="#">사이즈 가이드</a></li>
+                            <li><a href="#">문의하기</a></li>
+                        </ul>
+                    </li>
+                    <li>Account
+                        <ul>
+                            <li><a href="./login.html">로그인</a></li>
+                            <li><a href="./join.html">회원가입</a></li>
+                            <li><a href="#">위시리스트</a></li>
+                            <li><a href="#">배송조회</a></li>
+                        </ul>
+                    </li>
+                    <li>About Pandora
+                        <ul>
+                            <li><a href="./about.html">브랜드 알아보기</a></li>
+                            <li><a href="./about.html">연혁</a></li>
+                        </ul>
+                    </li>
+                    <li>Legal
+                        <ul>
+                            <li><a href="#">회원정책</a></li>
+                            <li><a href="#">배송 및 교환 정책</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">이용약관</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="f_info1">
+                    <ul class="f_about">
+                        <li>
+                            <p>㈜스타럭스 대표이사 : 안종훈 ㅣ 사업자등록번호 : 120-86-24028 ㅣ 통신판매업등록번호 : 서울 강남 – 4364호</p>
+                        </li>
+                        <li>
+                            <p>매장 : 서울특별시 강남구 테헤란로87길 22 한국도심공항 지하 1층 R108호 판도라매장</p>
+                        </li>
+                        <li>
+                            <p>E-Mail : 판도라 공식 온라인몰 (pandoracs@starluxe.co.kr) ㅣ</p>
+                        </li>
+                    </ul>
+                    <ul class="sns">
+                        <li><a href="https://pf.kakao.com/_VXgvj" target="_blank">sns kakaotalk</a></li>
+                        <li><a href="https://www.facebook.com/PandoraSouthKorea" target="_blank">sns
+                                facebook</a>
+                        </li>
+                        <li><a href="https://www.youtube.com/channel/UCnc-_ehFHkg2OOn8wqGS4iw" target="_blank">sns
+                                youtube</a></li>
+                        <li><a href="https://www.instagram.com/theofficialpandora/" target="_blank">sns
+                                instagram</a>
+                        </li>
+                        <li><a href="https://www.pinterest.co.kr/officialpandora/" target="_blank">sns
+                                pinterest</a>
+                        </li>
+                    </ul>
+                </div> <!-- //.f_info1 -->
+                <div class="f_info2">
+                    <p class="copyright">COPYRIGHT 2023 PANDORA. ALL RIGHTS RESERVED.</p>
+                    <p class="inipay">inipay</p>
+                </div> <!-- //.f_info2 -->
+            </div> <!-- //.footer_inner -->
+        </footer> <!-- footer -->
+    </div> <!-- //#wrap -->
+    <script src="../js/login_slide.js"></script>
+    <script src="../js/login&join.js"></script>
+</body>
+
+</html>
